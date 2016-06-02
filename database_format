@@ -1,0 +1,58 @@
+villager
+{
+	id			int(4)		PK
+	name		varchar(8)
+	gender		char(1)
+	personality	varchar(6)
+	species		varchar(9)	FK
+	birth_month	tinyint(2)
+	birth_day	tinyint(2)
+	catchphrase	varchar(13)
+}
+
+public_works
+{
+	id			int(4)		PK
+	name		varchar(34)
+	cost		mediumint(6)
+	requirement	varchar(44)
+	permanent	char(1)
+	countable	char(1)
+}
+
+halloween
+{
+	id			int(4)		PK
+	species		varchar(10)
+	jock		varchar(6)
+	smug		varchar(6)
+	lazy		varchar(6)
+	cranky		varchar(6)
+	normal		varchar(6)
+	peppy		varchar(6)
+	snooty		varchar(6)
+	uchi		varchar(6)
+}
+
+house_decor
+{
+	id		int(4)		PK
+	name	varchar(27)
+	type	varchar(9)
+	theme	varchar(10)
+}
+
+clothing
+{
+	id		int(4)		PK
+	name	varchar(20)
+	type	varchar(9)
+	theme	varchar(13) FK
+}
+
+fashion_check
+{
+	id		int(4)		PK
+	name	varchar(13)
+	clash	varchar(13)
+}
